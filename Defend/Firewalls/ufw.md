@@ -3,7 +3,7 @@
 
 Uncomplicated firewall build on the top of `iptables`
 
-???+ danger "Status"
+???+ tip "Status"
     | Command       | Description                                   |
     | ------------- | --------------------------------------------- |
     | `ufw enable`  | Enable the firewall                           |
@@ -18,7 +18,7 @@ Uncomplicated firewall build on the top of `iptables`
     | `ufw deny [port]/[protocol]`                    | Deny a port              |
     | `ufw deny in on [interface] from [IP]`          | Deny packets from an IP  |
 
-???+ danger "Delete rules"
+???+ failure "Delete rules"
     | Command               | Description          |
     | --------------------- | -------------------- |
     | `ufw status numbered` | List rules with id   |
