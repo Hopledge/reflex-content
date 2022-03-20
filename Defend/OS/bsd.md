@@ -1,6 +1,6 @@
 # BSD
 
-**B**erkley **S**oftware **D**istribution (BSD) is a UNIX-like system used as base OS for firewall distributions like [pfsense](https://www.pfsense.org/) or [**OPNsens**](https://opnsense.org/).
+**B**erkley **S**oftware **D**istribution (BSD) is a UNIX-like system used as base OS for firewall distributions like [pfsense](https://www.pfsense.org/) or [OPNsens](https://opnsense.org/).
 
 ???+ failure "Manage users"
     | Command                               | Description                     |
