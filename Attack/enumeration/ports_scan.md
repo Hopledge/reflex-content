@@ -1,7 +1,7 @@
-# Scan
+# Ports scan
 
 ???+ tip "Nmap quick win"
-    | Command                                 | Description      |
+    | Commands                                | Description      |
     | --------------------------------------- | ---------------- |
     | `nmap 192.168.1.1/24 -sn`               | Host discovery   |
     | `sudo nmap -sSVC -O -T4 192.168.1.1`    | TCP Scan ++      |
