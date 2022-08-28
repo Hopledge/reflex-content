@@ -1,5 +1,5 @@
-title: Defend
+title: 🛡️ Defend
 nav:
+    - application
+    - firewalls
     - OS
-    - Firewalls
-    - reputation.md
