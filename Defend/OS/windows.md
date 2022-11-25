@@ -2,7 +2,7 @@
 
 ## Windows Update
 
-Manage **W**indows **U**pdate **S**ervice (WSUS).
+Manage **W**indows **S**erver **U**pdate **S**ervice (WSUS).
 
 ???+ tip "Manage WSUS state"
     | Command                                                   | Description |

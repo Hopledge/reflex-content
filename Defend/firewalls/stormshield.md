@@ -1,7 +1,7 @@
 # Stormshield
 
-> [Documentation Global](https://documentation.stormshield.eu/HOME/Content/Website_Topics/Root-HomePage-FR.htm)
-> [Documentation CLI](https://documentation.stormshield.eu/SNS/v4/fr/Content/PDF/SNS-TechnicalNotes/sns-fr-configuration_de_base_cli_note_technique.pdf)
+> [Global documentation](https://documentation.stormshield.eu/HOME/Content/Website_Topics/Root-HomePage-FR.htm)
+> [CLI documentation](https://documentation.stormshield.eu/SNS/v4/fr/Content/PDF/SNS-TechnicalNotes/sns-fr-configuration_de_base_cli_note_technique.pdf)
 
 ## Informations
 
@@ -64,10 +64,17 @@ CONFIG CONSOLE ACTIVATE
 7. Edit `in` and change ip route
 8. Apply changes
 9. Change admin ethernet config
-10. Login on https://<newIp>/admin
+10. Login on https://<newIp>/admins
 11. admin~>Gain write privilege
 12. Configuration~>Objects~>Network Object
 13. Create gateway object with IP
 14. Create dns object with IP
 15. In route, edit default gateway
-16. In configuration, change DNS to dns object
+16. Configuration, change DNS to dns object
+17. Configuration, change NTP + Timezone
+18. Configuration~>Network settings
+
+### Filter and NAT
+
+1. Create network object
+2. Security policies~>New rules
