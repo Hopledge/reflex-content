@@ -3,3 +3,5 @@ nav:
     - ufw.md
     - iptables.md
     - nftables.md
+    - stormshield.md
+    - fortigate.md
