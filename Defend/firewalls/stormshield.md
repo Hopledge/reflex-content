@@ -5,33 +5,33 @@
 
 ## Informations
 
-- [Adresse by default](https://10.0.0.254/admin)
+- [Adress by default](https://10.0.0.254/admin)
 
-???+ faq "SShell"
+???+ info "CLI"
 
-    | Command | Explainations                        |
-    |---------|--------------------------------------|
-    |`defaultconfig -f -r`    |Reset firewall configuration|
+    === "Shell"
+        | Command | Explainations                               |
+        |---------|---------------------------------------------|
+        |`defaultconfig -f -r`    |Reset firewall configuration |
 
-???+ faq "SRPClient"
-
-    | Command | Explainations                        |
-    |---------|--------------------------------------|
-    |`cli`    |Launch **SRPClient** and start a shell|
+    === "SRPClient"
+        | Command | Explainations                         |
+        |---------|---------------------------------------|
+        |`cli`    |Launch **SRPClient** and start a shell |
 
 ## Backup/Restore
 
-Backup
+???+ info "CLI"
 
-```bash
-CONFIG BACKUP list=all [password=<password>]> mybackup.na
-```
+    === "Backup"
+        ```bash
+        CONFIG BACKUP list=all [password=<password>]> mybackup.na
+        ```
 
-Restore
-
-```bash
-CONFIG RESTORE list=all [password=<password>]< mybackup.na
-```
+    === "Restore"
+        ```bash
+        CONFIG RESTORE list=all [password=<password>]< mybackup.na
+        ```
 
 ## Update firewall
 
