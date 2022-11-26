@@ -55,6 +55,7 @@ CONFIG CONSOLE ACTIVATE
 ### Install SNS
 
 **Setup**
+
 1. Connect to the server with [adress](https://10.0.0.254/admin)
 2. Edit interfaces
 3. Edit the bridge to allow `in` and `out` available (Managing members)

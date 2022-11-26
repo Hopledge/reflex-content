@@ -1,5 +1,6 @@
 title: 🛡️ Defend
 nav:
-    - application
-    - firewalls
     - OS
+    - firewall
+    - web
+    - application

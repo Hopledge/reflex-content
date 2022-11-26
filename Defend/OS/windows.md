@@ -1,5 +1,13 @@
 # Windows
 
+## User management
+
+???+ tip "Manage WSUS state"
+    | Command                                                   | Description |
+    | --------------------------------------------------------- | ----------- |
+    | `Set-Service -Name wsusservice -Status Running -PassThru` | Enable WSUS |
+    | `Start-Service wsusservice  -PassThru`                    | Start WSUS  |
+
 ## Windows Update
 
 Manage **W**indows **S**erver **U**pdate **S**ervice (WSUS).

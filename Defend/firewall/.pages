@@ -1,6 +1,7 @@
-title: 🔥 L3 - Firewalls
+title: 🔥 L3 - Firewall
 nav:
     - ufw.md
+    - firewalld.md
     - iptables.md
     - nftables.md
     - stormshield.md
