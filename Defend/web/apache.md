@@ -5,17 +5,14 @@
 ???+ info "CLI"
 
     === "Debian/Ubuntu"
-
         **Installation**
-
         ```bash
         sudo apt install -y apache2
         sudo systemctl enable apache2
         sudo systemctl start apache2
         ```
 
-       **UFW**
-
+        **UFW**
         ```bash
         ufw allow http
         ufw allow https
@@ -23,9 +20,7 @@
         ```
 
     === "CentOS/RedHat/Rocky/Alma"
-
         **Installation**
-
         ```bash
         sudo dnf install -y httpd
         sudo systemctl enable httpd
@@ -33,7 +28,6 @@
         ```
 
         **Firewall**
-
         ```bash
         firewall-cmd --zone=public --add-service=http --permanent
         firewall-cmd --zone=public --add-service=https --permanent
@@ -41,6 +35,14 @@
         ```
 
 ## Webserver
+
+Configuration folder
+`/etc/apache2`
+
+| Files | Description |
+| --- | --- |
+| `/etc/apache2`   | Rename or New |
+| `/etc/apache2`   | Rename or New |
 
 Website files path `/var/www/html`
 
