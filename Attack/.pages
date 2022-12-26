@@ -1,4 +1,6 @@
 title: ⚔️ Attack
 nav:
-    - enumeration
+    - ports_scan.md
+    - web.md
+    - dorks.md
     - osint.md
