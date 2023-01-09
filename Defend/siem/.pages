@@ -1,0 +1,5 @@
+title: 🤖 L7 - SIEM
+nav:
+    - splunk.md
+    - windows.md
+    - linux.md
