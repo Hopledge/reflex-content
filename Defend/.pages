@@ -2,5 +2,6 @@ title: 🛡️ Defend
 nav:
     - OS
     - firewall
+    - siem
     - web
     - application
