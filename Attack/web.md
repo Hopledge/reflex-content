@@ -1,15 +1,15 @@
 # Web
 
 ???+ tip "DNS Enumeration"
-    | Commands                                                              | Description                   |
-    |-----------------------------------------------------------------------|-------------------------------|
-    | `gobuster dns -d target.net -w ~/wordlists/subdomains.txt --wildcard` | Subdomains discovery          |
-    | `subfinder -d target.net`                                             | Passive subdomain enumeration |
+    | Commands                                                           | Description                   |
+    |--------------------------------------------------------------------|-------------------------------|
+    | `gobuster dns -d $TARGET -w ~/wordlists/subdomains.txt --wildcard` | Subdomains discovery          |
+    | `subfinder -d $TARGET`                                             | Passive subdomain enumeration |
 
 ???+ tip "vhost Enumeration"
-    | Commands                                                                   | Description     |
-    |----------------------------------------------------------------------------|-----------------|
-    | `gobuster vhost -u https://target.net -w  ~/wordlists/vhosts-wordlist.txt` | Vhost discovery |
+    | Commands                                                                | Description     |
+    |-------------------------------------------------------------------------|-----------------|
+    | `gobuster vhost -u https://$TARGET -w  ~/wordlists/vhosts-wordlist.txt` | Vhost discovery |
 
 Small and compact webserver with python standard library
 

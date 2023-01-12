@@ -6,3 +6,4 @@ nav:
     - osint.md
     - smb.md
     - ftp.md
+    - redis.md
