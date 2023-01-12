@@ -4,3 +4,5 @@ nav:
     - web.md
     - dorks.md
     - osint.md
+    - smb.md
+    - ftp.md

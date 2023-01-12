@@ -8,7 +8,7 @@
         | Command            | Description                                    |
         |--------------------|------------------------------------------------|
         | `w`                | Shows all logged users and what they are doing |
-        | `logins -a`        | List user with details                         |
+        | `getent passwd`    | List users with details                        |
         | `logins -l [user]` | Get user details                               |
 
     === "Lock users"
