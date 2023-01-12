@@ -20,6 +20,7 @@ Dorks documentation [available](https://guillaume.engineer/Sec/Osint/dorks).
 | `site:malt.fr "<name or company>"`       | Find worker profile or company employes on Malt     |
 
 **Job Offer**
+
 | Dorks                                      | Description                          |
 |--------------------------------------------|--------------------------------------|
 | `site:cadres.apec.fr"<company>"`           | Find job offer on Cadre Apec         |
