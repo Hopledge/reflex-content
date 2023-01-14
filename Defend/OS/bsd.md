@@ -7,10 +7,10 @@
 ???+ faq "Commands"
 
     === "Search"
-        | Command            | Description                                    |
-        |--------------------|------------------------------------------------|
-        | `w`                | Shows all logged users and what they are doing |
-        | `logins -a`        | List user with details                         |
+        | Command     | Description                                    |
+        |-------------|------------------------------------------------|
+        | `w`         | Shows all logged users and what they are doing |
+        | `logins -a` | List user with details                         |
         | `logins -l [user]` | Get user details                               
 
     === "Lock users"
@@ -28,6 +28,14 @@
         | `passwd [user]`                       | Change user password            |
         | `pw userdel [user]`                   | Delete user                     |
         | `pw userdel [user] -r`                | Delete user and home directory  |
+
+## Other
+
+???+ faq "Time management"
+
+    | Command   | Description    |
+    |-----------|----------------|
+    | `tzsetup` | Setup timezone |
 
 ## Importants files
 
