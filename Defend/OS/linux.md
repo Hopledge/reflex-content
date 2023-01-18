@@ -32,11 +32,10 @@
 ## Other
 
 ???+ faq "Time management"
-
     | Command                               | Description                               |
     |---------------------------------------|-------------------------------------------|
     | `timedatectl`                         | Get time configuration                    |
-    | `timedatectl list-timezones`          | List all timezone (Europe/Paris for :fr:)   |
+    | `timedatectl list-timezones`          | List all timezone (Europe/Paris for :fr:) |
     | `timedatectl set-timezone [timezone]` | Set timezone                              |
 
 ## Importants files

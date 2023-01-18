@@ -32,7 +32,6 @@
 ## Other
 
 ???+ faq "Time management"
-
     | Command   | Description    |
     |-----------|----------------|
     | `tzsetup` | Setup timezone |
@@ -42,4 +41,4 @@
 | Files                | Description                       |
 |----------------------|-----------------------------------|
 | `/etc/master.passwd` | Textual database for admins users |
-| `/etc/passwd`        | Textual database for normal users 
+| `/etc/passwd`        | Textual database for normal users |
