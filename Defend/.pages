@@ -5,3 +5,4 @@ nav:
     - siem
     - web
     - application
+    - investigation.md
