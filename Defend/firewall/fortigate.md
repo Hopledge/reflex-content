@@ -38,3 +38,52 @@
     1. Configure administration station to get access to fortigate
     2. Use web interface `https://$IP`
     3. Follow setup installer
+
+???+ info "Reverse proxy"
+    **Reverse Proxy**
+    `Policy&Objects~>Virtual Server~>Create New`
+    * Type : HTTP
+    * Interface : WAN
+    * Virtual server IP : \<IP WAN FW>
+    * Virtual server port : \<Port exposé FW>
+    * Load Balancing Method : HTTP host
+    * Real Server : dns server dest / port dest / ip dest
+
+    `Policy&Objects~>Firewall Policy~>Create New`
+    * Inspection mode : Proxy-based
+    * Incoming interface : WAN
+    * Outgoing interface : DMZ-WEB
+    * Source : all
+    * Destination : \<nom object virtual server> # NB : doit être fait après avoir configuré l'inspection mode et les interfaces
+    * Action : Accept
+    * NAT : enable
+    * Web filter : default
+    * IPS : protect_http_server
+    * SSL Inspection : certificate inspection
+
+???+ info "VPN"
+    VPN => IPsec Wizzard
+    Template type : Custom
+    Network :
+    * IP Address : IP du pare-feu distant
+    * Interface : Interface de sortie (WAN)
+    * NAT Traversal : Disable
+    * Deed Peer Detection : On Idle
+
+    IKE : Version 2
+
+    Phase 1 Proposal : (NB : Supprimer les proposisions non conformes)
+    * Encryption : AES256GCM| PRF : PRFSHA256
+    * Diffie-Hellman Groups : 19
+    * Key Lifetime : 21600
+
+    Phase 2 selectors : (NB : Supprimer les proposisions non conformes)
+    New Phase 2 :
+    * Local Address : <Subnet_local>
+    * Remote Address : <Subnet_distant_to_access>
+    * Advanced :	
+        * Phase 2 Proposal :
+            * Encryption : AES256GCM
+            * Diffie-Hellman Groups : 19
+            * Key Lifetime : 3600
+    => Valider et si nécessaire, cliquer sur "Add" (dans Phase 2 Selectors), et configurer le prochain réseau en suivant la procédure ci-dessus.

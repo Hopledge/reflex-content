@@ -72,3 +72,34 @@
 ???+ info "Rules/Objects"
     1. Create network object
     2. Security policies~>New rules
+
+???+ info "VPN"
+    VPN -> Ipsec VPN -> Encryption Policy -> Site-to-site -> Add -> Site-to-site tunnel (a faire pour chaque réseau distant à atteindre / réseau local à partager)
+    * Local network : <Subnet_local_object>
+    * Peer selection => Create an IKEv2 peer 
+        * Remote gateway : <distant_firewall_object>
+    * Remote network : <Subnet_distant_to_access>
+
+
+    VPN -> Ipsec VPN -> Peers
+    * Vérifier que la version d'IKE est bien en V2
+    * Si "IKE profile" n'est pas en "StrongEncryption" (ou configuré sur un profil conforme), sélectionner "StrongEncryption"
+    * Dans 'Advanced properties', mettre le DPD en "High" ou en "Low"
+
+    VPN -> Ipsec VPN -> Encryption profiles
+    À remplir en suivant recommandation anssi ~> /!\ IKE et IPSEC (Supprimer tout les profils non conformes, et les proposals non conformes) :
+
+    **IKE**
+    | Champ          | Config         |
+    | -------------- | -------------- |
+    | Diffie-Hellman | DH19           |
+    | Lifetime       | 21600          |
+    | Enc_Algo       | AES_gcm_16 256 |
+
+    **IPSEC**
+    | Champ          | Config         |
+    | -------------- | -------------- |
+    | Diffie-Hellman | DH19           |
+    | Lifetime       | 3600           |
+    | Enc_Algo       | AES_gcm_16 256 |
+    | Auth_Algo      | hmac_sha384    |
