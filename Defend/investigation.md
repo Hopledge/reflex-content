@@ -25,12 +25,52 @@ docker exec -it $CONTAINERNAME /bin/bash
 
 ## Tracks
 
-## User and rights
+### Other
+
+Get hostname
+
+```bash
+/etc/hostname
+```
+
+Get timezone
+
+```bash
+/etc/timezone
+```
+
+### Network
+
+List interfaces
+
+```bash
+cat /etc/network/interfaces
+```
+
+List actives connections
+
+```bash
+netstat -natp
+```
+
+List hardcoded dns
+
+```bash
+cat /etc/hosts
+```
+
+Get DNS settings
+
+```bash
+cat /etc/resolv.conf
+```
+
+### User/Groups/Rights
 
 List users from `passwd`
 
 ```bash
-cat /etc/passwd| column -t -s :
+cat /etc/passwd | column -t -s :
 ```
 
 List sudoers
@@ -39,13 +79,22 @@ List sudoers
 sudo cat /etc/sudoers
 ```
 
+List groups
+
+```bash
+cat /etc/group
+# Find users from a group
+cat /etc/group | grep '$GROUPNAME'
+```
+
 ### Persistant
 
 #### Startup
 
 ```bash
-/etc/init.d
-/etc/profile.d
+ls /etc/init.d
+ls /etc/profile.d
+cat ~/.bashrc
 ```
 
 #### Cron
@@ -104,7 +153,10 @@ cat /home/$USER/.ssh/authorized_keys | less -r
 
 ### Proccessus
 
-
+```bash
+# Netcat detection
+ps -aux | grep 'nc '
+```
 
 ## Sources
 
