@@ -6,3 +6,5 @@ nav:
     - nftables.md
     - stormshield.md
     - fortigate.md
+    - step-by-step-configure-fortigate.md
+    - step-by-step-configure-vpn-sns-forti.md

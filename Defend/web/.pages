@@ -1,5 +1,6 @@
 title: 📡 L7 - Webserver
 nav:
     - apache.md
+    - step-by-step-apache.md
     - nginx.md
     - iis.md

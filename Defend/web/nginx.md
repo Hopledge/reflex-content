@@ -47,10 +47,12 @@ server { # simple load balancing
 ## Security option
 
 First install nginx plugin to get more option on nginx.
+
 `sudo apt install nginx-extras`
+
 This packet allow you tu use option like more_clear_headers Server
 
-```
+```yaml
   server_tokens off;
   more_clear_headers Server;
   add_header X-Content-Type-Options nosniff;
