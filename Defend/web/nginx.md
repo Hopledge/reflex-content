@@ -44,6 +44,25 @@ server { # simple load balancing
   }
 ```
 
+## Security option
+
+First install nginx plugin to get more option on nginx.
+`sudo apt install nginx-extras`
+This packet allow you tu use option like more_clear_headers Server
+
+```
+  server_tokens off;
+  more_clear_headers Server;
+  add_header X-Content-Type-Options nosniff;
+  add_header X-Frame-Options "SAMEORIGIN";
+  add_header X-Robots-Tag none;
+  add_header X-Download-Options noopen;
+  add_header X-Permitted-Cross-Domain-Policies none;
+  add_header X-XSS-Protection "1; mode=block";
+  add_header Referrer-Policy "strict-origin";
+  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+```
+
 ## Documentation
 
 - [Nginx official documentation](https://www.nginx.com/resources/wiki/start/topics/examples/full/)
